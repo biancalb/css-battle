@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target #8</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="fork"></div>
+      <div class="handle"></div>
+      <div class="tines">
+        <div class="up"></div>
+        <div class="down"></div>
+        <div class="up"></div>
+        <div class="down"></div>
+        <div class="up"></div>
+        <div class="down"></div>
+        <div class="up"></div>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        position: fixed;
+        background: #6592CF;
+      }
+      .fork, .handle {
+        background: #060F55;
+        position: absolute;
+      }
+      .fork {
+        width: 140px;
+        height: 140px;
+        top: 110px;
+        left: 130px;
+        border-radius: 50%;
+      }
+      .handle {
+        width: 20px;
+        height: 51px;
+        bottom: 0;
+        left: 190px;
+      }
+      .tines {
+        width: 140px;
+        height: 120px;
+        position: absolute;
+        top: 50px;
+        left: 130px;
+        background: transparent;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .tines div {
+        width: 45px;
+      }
+      .tines .up {
+        background: #060F55;
+        border-radius: 15px 15px 0 0;
+      }
+      .tines .down {
+        background: #6592CF;
+        border-radius: 0 0 15px 15px;
+      }
+    </style>
+  </body>
+</html>
