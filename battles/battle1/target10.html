@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target #10</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="yellow">
+        <div class="y1"></div>
+        <div class="y2"></div>
+        <div class="y1"></div>
+      </div>
+      <div class="circles">
+        <div class="c1">
+          <div class="c1a"></div>
+        </div>
+        <div class="c2">
+          <div class="c2a"></div>
+        </div>
+        <div class="c1">
+          <div class="c1a"></div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background: #62306D;
+        width: 400px;
+        height: 300px;
+        position: fixed;
+      }
+      .yellow {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 100px auto;
+      }
+      .yellow div {
+        width: 66.67%;
+        height: 100%;
+        background:#F7EC7D;
+      }
+      .yellow .y1 {
+        height: 50%;
+      }
+      .circles, .circles div {
+        display: flex;
+        justify-content: center;
+      }
+      .circles {
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        bottom: 50px;
+        left: 50px;
+      }
+      .circles div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        align-items: center;
+      }
+      .circles .c1 {
+        align-self: flex-end;
+      }
+      .c1 .c1a, .c2 .c2a {
+        width: 60px;
+        height: 60px;  
+      }
+      .c1, .c2a {
+        background: #AA445F;
+      }     
+      .c1a, .c2 {
+        background: #E38F66;    
+      }     
+    </style>
+  </body>
+</html>
