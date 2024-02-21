@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target (21_2_2024 )</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="chip"></div>
+      <div id="c">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="t"></div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        position: fixed;
+        background: #ACDDF9;
+      }
+      #chip {
+        width: 200px;
+        height: 125px;
+        background: #0A6B91;
+        margin: 88px auto;
+      }
+      #c {
+        position: absolute;
+        top: 113px;
+        left: 125px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 100px;
+        height: 75px;
+      }
+      #c div {
+        background: #ACDDF9;
+        width: 40px;
+        height: 47%;
+      }
+      #c div:nth-child(1), 
+      #c div:nth-child(3), 
+      #c div:nth-child(4),
+      #c div:nth-child(6) {
+        width: 25px;
+        border-radius: 10px 0 0 0;
+      }
+      #c div:nth-child(3){
+        transform: scaleX(-1);
+      }
+      #c div:nth-child(4){
+        transform: scaleY(-1);
+      }
+      
+      #c div:nth-child(6) {
+        border-radius: 0 0 10px 0;
+      }
+      #t {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 88px;
+        left: 220px;
+        border-right: 40px solid #ACDDF9;
+        border-left: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-right-color: #ACDDF9;
+      }
+    </style>
+  </body>
+</html>
