@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target #17</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="c1">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="c2">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        position: fixed;
+        background: #09042A;
+      }
+      #c1 {
+        width: 200px;
+        height: 40px;
+        margin: 130px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50%;
+        background: #E78481;
+      }
+      #c1 div {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #09042A;
+        border: 10px solid #E78481;
+      }
+      #c2 {
+        width: 70px;
+        height: 186px;
+        position: absolute;
+        top:57px;
+        left:160px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: transparent;
+      }
+      #c2 div {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #F5BB9C;
+        border: 10px solid #09042A;
+      }
+    </style>
+  </body>
+</html>
