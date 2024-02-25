@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target (24_2_2024 )</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="kb">
+        <div class="k1">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div id="k2">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="k1">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 400px;
+        height: 300px;
+        position: fixed;
+        background: #9ED7F8;
+      }
+
+      #kb {
+        width: 300px;
+        height: 120px;
+        background: #277292;
+        margin: 90px auto;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      
+      .k1 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 90px;
+        width: 40px;
+      }
+      
+      .k1 div {
+        background: #FFFFFF;
+        height: 20px;
+        width: 40px;
+        border-radius: 10px;
+      }
+
+      #k2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 160px;
+        height: 90px;
+      }
+      #k2 div{
+        width: 20px;
+        height: 20px;
+        background: #FFFFFF;
+        border-radius: 50%;
+      }
+      #k2 div:nth-last-child(1){
+        width: 100%;
+        height: 20px;
+        background: #FFFFFF;
+        border-radius: 10px;
+      }
+    </style>
+  </body>
+</html>
