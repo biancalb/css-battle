@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target (27_2_2024 )</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="p1">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="p2">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        position: fixed;
+        background: #2E0040;
+      }
+      #p1, #p2 {
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+      }
+      #p1 {
+        width: 200px;
+        height: 100px;
+        margin: 100px auto;
+      }
+      #p2 {
+        flex-direction: column;
+        width: 100px;
+        height: 200px;
+        margin: 30px auto;
+        position: absolute;
+        top:20px;
+        left: 150px;
+      }
+      #p1 div, #p2 div {
+        width: 100px;
+        height: 100px;      
+        border-radius: 50%;
+        background: #A94EA4;
+      }
+      #p2 div {
+        background: #D3B1D6;
+      }
+    </style>
+  </body>
+</html>
