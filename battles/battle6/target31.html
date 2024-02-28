@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target #31</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+        <div id="cnt">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: #AA445F;
+            width: 400px;
+            height: 300px;
+            position: fixed;
+        }
+        #cnt {
+            width: 250px;
+            height: 200px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #cnt div {
+            width: 100px;
+            height: 200px;
+            background: #F7EC7D;
+            border-radius: 200px 0 0 200px;
+        }
+        #cnt div:nth-last-child(1) {
+            background: #E38F66;
+            transform: scaleX(-1);
+        }
+
+
+    </style>
+  </body>
+</html>
