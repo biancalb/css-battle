@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target #43</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+        <div id="c">
+          <div></div>
+          <div></div>
+        </div>
+    </div>
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+          background: #6592CF;
+          width: 400px;
+          height: 300px;
+          position: fixed;
+        }
+        #c {
+          width: 150px;
+          height: 260px;
+          margin: 30px 145px;
+          display: flex;
+        }
+        #c div {
+          width: 40px;
+          height: 70%;
+          border: 30px solid #243D83;
+          border-left: none;
+          border-radius: 0 70px 70px 0;
+        }
+        #c div:nth-child(2){
+          transform: scaleX(-1) translate(30px);
+        }
+
+    </style>
+  </body>
+</html>
