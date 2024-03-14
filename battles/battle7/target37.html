@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target #37</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+        <div id="s">
+          <div>
+            <div></div>
+          </div>
+        </div>
+    </div>
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+          background: #6592CF;
+          width: 400px;
+          height: 300px;
+          position: fixed;
+        }
+        .container div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #243D83;
+        }
+        #s {
+          margin: 25px auto;
+          width: 250px;
+          height: 250px;
+        }
+        #s > div {
+          width: 150px;
+          height: 150px;
+          background: #6592CF;
+          transform: rotate(15deg);
+        }
+        #s > div div {
+          width: 75px;
+          height: 75px;
+          transform: rotate(15deg);
+        }
+    </style>
+  </body>
+</html>
